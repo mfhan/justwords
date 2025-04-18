@@ -1,0 +1,11 @@
+
+baseURL = "/"
+languageCode = "en-us"
+title = "JustWords NYC"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+    
+[params]
+  author = "Marie-France Han"
