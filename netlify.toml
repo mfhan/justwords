@@ -1,0 +1,8 @@
+[build]
+  publish = "public"
+  command = "hugo"
+
+[context.production.environment]
+  HUGO_VERSION = "0.121.1"  # Use your installed version
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
