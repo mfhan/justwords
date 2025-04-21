@@ -3,7 +3,7 @@
   <!-- Navigation -->
   <nav class="bg-white shadow-sm">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="text-xl font-bold text-blue-700">JustWords NYC</div>
+      <div class="text-xl font-bold text-blue-700">JustWords NYC/Marie-France Han</div>
       <div class="flex space-x-6">
         <a href="#services" class="text-gray-700 hover:text-blue-600">Services</a>
         <a href="#expertise" class="text-gray-700 hover:text-blue-600">Expertise</a>
@@ -17,12 +17,16 @@
   <header class="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center justify-between">
     <div class="md:w-2/3 mb-8 md:mb-0">
       <h2 class="text-2xl font-semibold text-blue-600 mb-2">JustWords NYC</h2>
-      <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">Find Your Company's Narrative</h1>
+      <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">Find Your Company's True Narrative</h1>
       <p class="text-xl md:text-2xl text-gray-600 mb-4">Storytelling Empathy Meets Journalistic Precision</p>
-      <p class="text-lg text-gray-600 mb-8">I can help you communicate accurately and tell your story with authenticity
-        and conviction.</p>
-      <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Schedule a
-        Consultation</button>
+      <p class="text-lg text-gray-600 mb-8">I can help you communicate accurately and tell a story that will resonate
+        with any audience.</p>
+      <!-- <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Schedule a
+        Consultation</button> -->
+      <a href="https://calendly.com/marief" target="_blank" rel="noopener"
+        class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block text-center">
+        Schedule a Free Consultation
+      </a>
     </div>
     <div class="md:w-1/3 flex justify-center">
       <div class="relative w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
@@ -31,13 +35,50 @@
     </div>
   </header>
 
-  <!-- Value Prop -->
-  <!--    
-  <section class="bg-blue-900 text-white py-12 text-center">
-    <h2 class="text-2xl md:text-3xl font-bold mb-6">The Bridge Between Journalism and Technology</h2>
-    <p class="text-lg max-w-3xl mx-auto">"I can listen with empathy, communicate accurately, explain tech to non-tech
-      audiences and build processes from the user's point of view."</p>
-  </section> -->
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="bg-white py-16 scroll-mt-16">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <div class="text-center mb-12 px-4">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4 flex items-center justify-center gap-3">
+          Marie-France Han
+          <a href="https://www.linkedin.com/in/mariefr/" target="_blank" rel="noopener"
+            class="hover:text-blue-600 underline transition-all" title="View my LinkedIn profile">
+            <!-- LinkedIn icon next to name, styled blue and animated on hover -->
+            <img src="/assets/icons/linkedin.svg" alt="LinkedIn"
+              class="w-6 h-6 text-blue-600 hover:scale-110 hover:text-blue-700 transition-transform duration-200">
+          </a>
+        </h2>
+        <p class="text-xl text-gray-700">Welcoming. Worldly. Authoritative.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 items-start px-4">
+        <div class="md:col-span-1 flex justify-center">
+          <a href="https://www.linkedin.com/in/mariefr/" target="_blank" rel="noopener">
+            <!-- <img src="/assets/images/profile.jpg" alt="Marie-France Han"
+              class="rounded-lg shadow-lg w-64 h-auto hover:scale-105 transition-transform duration-200"> -->
+          </a>
+        </div>
+        <div class="md:col-span-2 space-y-4 text-gray-700 text-lg">
+          <p><strong>Marie-France Han</strong> is a content strategist and multilingual communicator with a deep-rooted
+            foundation in journalism and technology. From editing market coverage at Bloomberg to designing
+            developer-centered content strategies at MongoDB, she brings more than two decades of international
+            experience
+            to every engagement.</p>
+          <p>Her professional journey has taken her from the bustling newsrooms of Seoul and New York to the innovation
+            hubs of early-stage tech startups. At the core of her practice lies an empathetic ear, a sharp editorial
+            eye,
+            and the ability to distill complex technology into clear, audience-driven narratives.</p>
+          <p>Marie-France is a Columbia-trained data journalist, a certified Scrum Master, and a seasoned speaker coach
+            who has supported non-native English speakers and underrepresented voices in tech.</p>
+          <p><em>JustWords NYC exists to help founders and product teams find their voice, expand their reach, and build
+              trust through content that informs, resonates, and converts—across borders and languages.</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
 
   <!-- Services Grid -->
   <section id="services" class="container mx-auto px-4 py-16">
@@ -53,12 +94,13 @@
     </div>
   </section>
 
+
   <!-- Expertise -->
   <section id="expertise" class="bg-gray-50 py-16">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold mb-4">Marie-France Han</h2>
       <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-12">Founder of JustWords NYC, with expertise spanning global
-        newsrooms, tech companies, and data journalism</p>
+        newsrooms, tech companies's executive teams, and startup incubators</p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         {{ range .Site.Data.expertise }}
         <div class="flex items-start space-x-4">
@@ -72,6 +114,8 @@
       </div>
     </div>
   </section>
+
+  <!-- Experience -->
 
   <section id="experience" class="container mx-auto px-4 py-16">
     <h2 class="text-3xl font-bold text-center mb-12">Career Journey</h2>
@@ -106,8 +150,12 @@
     <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">Let's create content that bridges technical expertise with
       human connection—in any language your audience speaks.</p>
     <div class="flex flex-col md:flex-row justify-center gap-4">
-      <a href="#" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition text-lg">Schedule a
-        Consultation</a>
+      <!-- <a href="#" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition text-lg">Schedule a
+        Consultation</a> -->
+      <a href="https://calendly.com/marief" target="_blank" rel="noopener"
+        class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition text-lg inline-block">
+        Schedule a Free Consultation
+      </a>
       <a href="mailto:mf212mf@gmail.com"
         class="border border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition text-lg">Email
         Me</a>
@@ -124,11 +172,11 @@
       </div>
       <div class="grid grid-cols-2 gap-4 text-center md:text-left">
         <a href="mailto:mf212mf@gmail.com" class="hover:text-blue-400">mf212mf@gmail.com</a>
-        <a href="tel:6463203548" class="hover:text-blue-400">646-320-3548</a>
+        <!-- <a href="tel:6463203548" class="hover:text-blue-400">646-320-3548</a> -->
         <a href="https://linkedin.com/in/mariefr" class="hover:text-blue-400">LinkedIn</a>
         <a href="https://github.com/mfhan" class="hover:text-blue-400">GitHub</a>
-        <a href="https://mariefrancehan.com" class="hover:text-blue-400">Portfolio</a>
-        <a href="https://mfhan.github.io" class="hover:text-blue-400">GitHub Pages</a>
+        <!-- <a href="https://mariefrancehan.com" class="hover:text-blue-400">Portfolio</a>
+        <a href="https://mfhan.github.io" class="hover:text-blue-400">GitHub Pages</a> -->
       </div>
     </div>
   </footer>
