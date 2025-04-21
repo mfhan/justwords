@@ -5,12 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
-    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-white text-gray-800 leading-normal flex flex-col items-center max-w-screen-xl mx-auto">
+    {{ block "main" . }}{{ end }}
+  </body>
+
+</html>
+
+<!-- 
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body class="bg-white text-gray-800 leading-normal">
     {{ block "main" . }}{{ end }}
-  </body>
-
-</html>
+  </body> -->
