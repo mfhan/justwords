@@ -2,24 +2,27 @@
   role: "Founder"
   period: "2022 – Present"
   items:
-    - "Advised pre-seed startups in AI and healthtech"
-    - "Created multilingual pitch decks and UX narratives"
-    - "Supported Y Combinator startup on front-end UX"
+    - "Advise pre-seed startups in AI and healthtech"
+    - "Create multilingual pitch decks and narratives"
+    - "Collaborate with founders to design and execute content strategies"
+    - "Clients include: EDLV (Paris), Maison de la Region Occitanie (New York), Singapore GIA (Singapore), Quay Acceleration (New York), contestants for Black Ambition and Diversidays,and more"
 
 - company: "MongoDB"
   role: "Technical Content Strategist"
   period: "2020 – 2021"
   items:
-    - "SEO Hygiene strategy: +170% traffic YoY"
+    - "Edited executive keynotes in the Office of the CTO"
+    - "Rebuilt technical content creation process and editorial calendar"
     - "Built cross-functional content partnerships"
     - "Increased paid tier registrations 3x"
+    - "SEO Hygiene strategy: +170% traffic YoY"
 
 - company: "Jet.com"
   role: "Technology Evangelist"
   period: "2017 – 2018"
   items:
-    - "Hosted 19 technical meetups"
-    - "Amplified underrepresented speakers"
+    - "Planned, designed content and managed hosting of 19 technical meetups and hackathons"
+    - "Supported and coached underrepresented speakers"
     - "Managed Jet.com blog and Twitter content"
 
 - company: "Bloomberg"
@@ -28,11 +31,10 @@
   items:
     - "Covered corporate and market news from Russia and China with an emphasis on geopolitical risk"
     - "Generated coverage plans from Bloomberg Terminal data"
-
-- company: "Thomson Reuters"
-  role: "Chief Equities Correspondent"
-  period: "2006 – 2009"
-  items:
-    - "Led 6-person bilingual news desk"
-    - "Covered Samsung, Hyundai, Posco, and Korean IPOs"
-    - "Interviewed executives at CES and major global industry events"
+# - company: "Thomson Reuters"
+#   role: "Chief Equities Correspondent"
+#   period: "2006 – 2009"
+#   items:
+#     - "Led 6-person bilingual news desk"
+#     - "Covered Samsung, Hyundai, Posco, and Korean IPOs"
+#     - "Interviewed executives at CES and major global industry events"
