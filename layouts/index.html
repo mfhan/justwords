@@ -15,11 +15,13 @@
 
   <!-- Hero Section -->
   <header class="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center justify-between">
+
+
     <div class="md:w-2/3 mb-8 md:mb-0">
       <h2 class="text-2xl font-semibold text-blue-600 mb-2">JustWords NYC</h2>
       <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">Find Your Company's True Narrative</h1>
       <p class="text-xl md:text-2xl text-gray-600 mb-4">Storytelling Empathy Meets Journalistic Precision</p>
-      <p class="text-lg text-gray-600 mb-8">I can help you communicate accurately and tell a story that will resonate
+      <p class="text-lg text-gray-600 mb-8">Let me help you tell a story that will resonate
         with any audience.</p>
       <!-- <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Schedule a
         Consultation</button> -->
@@ -38,7 +40,7 @@
 
   <!-- ABOUT SECTION -->
 
-  <section id="about" class="bg-white py-16 scroll-mt-16 w-full">
+  <section id="about" class="container mx-auto px-4 py-16">
     <div class="px-4">
       <h2 class="text-3xl font-bold text-gray-900 mb-4 flex items-center justify-center gap-3 text-center">
         Marie-France Han
@@ -48,7 +50,6 @@
             class="w-6 h-6 text-blue-600 hover:scale-110 hover:text-blue-700 transition-transform duration-200">
         </a>
       </h2>
-      <p class="text-xl text-gray-700 text-center mb-12">Welcoming. Worldly. Authoritative.</p>
 
       <div class="grid md:grid-cols-3 gap-8 items-center">
         <div class="md:col-span-1 flex justify-center">
@@ -58,16 +59,18 @@
           </a>
         </div>
         <div class="md:col-span-2 space-y-4 text-gray-700 text-lg">
+          <p><em>JustWords NYC exists to help founders and product teams find their voice, expand their reach, and build
+              trust through content that informs, resonates, and converts—across borders and languages.</em></p>
           <p><strong>Marie-France Han</strong> is a content strategist and multilingual communicator with a deep-rooted
-            foundation in journalism and technology. From editing market coverage at Bloomberg to designing
+            foundation in journalism and technology. From editing market coverage at Bloomberg to designing executive
             developer-centered content strategies at MongoDB, she brings two decades of international experience
             to every engagement.</p>
           <p>At the core of her practice lies an empathetic ear, a sharp editorial eye,
             and the ability to distill complex technology into clear, audience-driven narratives.</p>
-          <p>Marie-France is a Columbia-trained data journalist, a certified Scrum Master, and a compassionate speaker
+          <p>Marie-France is a Columbia University-trained data journalist, a certified Scrum Master, and a
+            compassionate speaker
             coach who has supported non-native English speakers and underrepresented voices in tech.</p>
-          <p><em>JustWords NYC exists to help founders and product teams find their voice, expand their reach, and build
-              trust through content that informs, resonates, and converts—across borders and languages.</em></p>
+
         </div>
       </div>
     </div>
@@ -93,8 +96,8 @@
 <!-- Expertise -->
 <section id="expertise" class="bg-gray-50 py-16">
   <div class="container mx-auto px-4 text-center">
-    <h2 class="text-3xl font-bold mb-4">Marie-France Han</h2>
-    <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-12">Founder of JustWords NYC, with expertise spanning global
+    <h2 class="text-3xl font-bold mb-4">Expertise</h2>
+    <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-12">Deep experience with global
       newsrooms, tech companies's executive teams, and startup incubators</p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       {{ range .Site.Data.expertise }}
