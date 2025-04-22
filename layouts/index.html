@@ -3,44 +3,64 @@
   <!-- Navigation -->
   <nav class="bg-white shadow-sm">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="text-xl font-bold text-blue-700">JustWords NYC/Marie-France Han</div>
-      <div class="flex space-x-6">
+      <!-- <div class="text-xl font-bold text-blue-700">JustWords NYC/Marie-France Han</div> -->
+      <div class="text-xl font-bold text-blue-700 flex items-center">
+        <span>JustWords NYC/</span>
+        <a href="https://linkedin.com/in/mariefr" target="_blank" rel="noopener"
+          class="flex items-center hover:text-blue-800 transition-colors">
+          Marie-France Han
+          <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+      </div>
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-6">
         <a href="#services" class="text-gray-700 hover:text-blue-600">Services</a>
         <a href="#expertise" class="text-gray-700 hover:text-blue-600">Expertise</a>
         <a href="#experience" class="text-gray-700 hover:text-blue-600">Experience</a>
         <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
       </div>
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden focus:outline-none" id="menu-toggle" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="hidden md:hidden bg-white w-full" id="mobile-menu">
+      <div class="px-4 py-2 flex flex-col space-y-2">
+        <a href="#services" class="text-gray-700 hover:text-blue-600 py-2">Services</a>
+        <a href="#expertise" class="text-gray-700 hover:text-blue-600 py-2">Expertise</a>
+        <a href="#experience" class="text-gray-700 hover:text-blue-600 py-2">Experience</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600 py-2">Contact</a>
+      </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <header class="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center justify-between">
-
-
+  <header class="container mx-auto px-4 py-8 md:py-16 flex flex-col md:flex-row items-center justify-between">
     <div class="md:w-2/3 mb-8 md:mb-0">
       <h2 class="text-2xl font-semibold text-blue-600 mb-2">JustWords NYC</h2>
-      <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">Find Your Company's True Narrative</h1>
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">Find Your Company's True Narrative</h1>
       <p class="text-xl md:text-2xl text-gray-600 mb-4">Storytelling Empathy Meets Journalistic Precision</p>
-      <p class="text-lg text-gray-600 mb-8">Let me help you tell a story that will resonate
-        with any audience.</p>
-      <!-- <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Schedule a
-        Consultation</button> -->
+      <p class="text-lg text-gray-600 mb-8">Let me help you tell a story that will resonate with any audience.</p>
       <a href="https://calendly.com/marief" target="_blank" rel="noopener"
         class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block text-center">
         Schedule a Free Consultation
       </a>
     </div>
     <div class="md:w-1/3 flex justify-center">
-      <div class="relative w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
-        <img src="../assets/images/profile.png" alt="Marie-France Han" class="w-full h-full object-cover">
+      <div class="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
+        <img src="/assets/images/profile.png" alt="Marie-France Han" class="w-full h-full object-cover">
       </div>
     </div>
   </header>
 
-
   <!-- ABOUT SECTION -->
-
-  <section id="about" class="container mx-auto px-4 py-16">
+  <section id="about" class="container mx-auto px-4 py-8 md:py-16">
     <div class="px-4">
       <h2 class="text-3xl font-bold text-gray-900 mb-4 flex items-center justify-center gap-3 text-center">
         Marie-France Han
@@ -52,156 +72,123 @@
       </h2>
 
       <div class="items-center">
-        <!-- <div class="grid md:grid-cols-3 gap-8 items-center"> -->
-        <div class="md:col-span-1 flex justify-center">
-          <a href="https://www.linkedin.com/in/mariefr/" target="_blank" rel="noopener">
-            <!-- <img src="/assets/images/profile.jpg" alt="Marie-France Han"
-              class="rounded-lg shadow-lg w-64 h-auto hover:scale-105 transition-transform duration-200"> -->
-          </a>
-        </div>
-        <div class="md:col-span-2 space-y-4 text-gray-700 text-lg">
+        <div class="space-y-4 text-gray-700 text-lg">
           <p><em>JustWords NYC exists to help founders and product teams find their voice, expand their reach, and build
-              trust through content that informs, resonates, and converts—across borders and languages.</em></p>
-          <p><strong>Marie-France Han</strong> is a content strategist and multilingual communicator with a deep-rooted
-            foundation in journalism and technology. From editing market coverage at Bloomberg to designing executive
+              trust through content that informs, resonates, and converts across borders and languages.</em></p>
+          <p><strong>Marie-France Han</strong> is a content strategist and multilingual (English-French-Korean)
+            communicator with a deep-rooted
+            foundation in journalism and technology. From generating market coverage and breaking news at Bloomberg to
+            designing executive keynotes and
             developer-centered content strategies at MongoDB, she brings two decades of international experience
             to every engagement.</p>
           <p>At the core of her practice lies an empathetic ear, a sharp editorial eye,
             and the ability to distill complex technology into clear, audience-driven narratives.</p>
           <p>Marie-France is a Columbia University-trained data journalist, a certified Scrum Master, and a
-            compassionate speaker
-            coach who has supported non-native English speakers and underrepresented voices in tech.</p>
-
+            compassionate speaker coach who has supported non-native English speakers and underrepresented voices in
+            tech.</p>
         </div>
       </div>
     </div>
-</div>
-</section>
+  </section>
 
-
-<!-- Services Grid -->
-<section id="services" class="container mx-auto px-4 py-16">
-  <h2 class="text-3xl font-bold text-center mb-12">Services</h2>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-    {{ range .Site.Data.services }}
-    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition text-center">
-      <img src="/assets/icons/{{ .icon }}" alt="{{ .title }} icon" class="w-8 h-8 mx-auto mb-4">
-      <h3 class="text-xl font-semibold mb-2">{{ .title }}</h3>
-      <p class="text-gray-600">{{ .desc }}</p>
+  <!-- Services Grid -->
+  <section id="services" class="container mx-auto px-4 py-8 md:py-16">
+    <h2 class="text-3xl font-bold text-center mb-8 md:mb-12">Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+      {{ range .Site.Data.services }}
+      <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition text-center">
+        <img src="/assets/icons/{{ .icon }}" alt="{{ .title }} icon" class="w-8 h-8 mx-auto mb-4">
+        <h3 class="text-xl font-semibold mb-2">{{ .title }}</h3>
+        <p class="text-gray-600">{{ .desc }}</p>
+      </div>
+      {{ end }}
     </div>
-    {{ end }}
-  </div>
-</section>
+  </section>
 
+  <!-- Expertise -->
+  <section id="expertise" class="bg-gray-50 py-8 md:py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Expertise</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8 md:mb-12">Deep experience with global
+        newsrooms in New York, Seoul and Paris, tech companies's executive teams, and startup incubators</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {{ range .Site.Data.expertise }}
+        <div class="flex items-start space-x-4">
+          <img src="/assets/icons/{{ .icon }}" alt="{{ .title }} icon" class="w-6 h-6 text-blue-600">
+          <div>
+            <h3 class="text-lg font-semibold mb-2">{{ .title }}</h3>
+            <p class="text-gray-600">{{ .desc }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
 
-<!-- Expertise -->
-<section id="expertise" class="bg-gray-50 py-16">
-  <div class="container mx-auto px-4 text-center">
-    <h2 class="text-3xl font-bold mb-4">Expertise</h2>
-    <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-12">Deep experience with global
-      newsrooms, tech companies's executive teams, and startup incubators</p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {{ range .Site.Data.expertise }}
-      <div class="flex items-start space-x-4">
-        <img src="/assets/icons/{{ .icon }}" alt="{{ .title }} icon" class="w-6 h-6 text-blue-600">
-        <div>
-          <h3 class="text-lg font-semibold mb-2">{{ .title }}</h3>
-          <p class="text-gray-600">{{ .desc }}</p>
+  <!-- Experience -->
+  <section id="experience" class="container mx-auto px-4 py-8 md:py-16">
+    <h2 class="text-3xl font-bold text-center mb-8 md:mb-12">Experience</h2>
+    <div class="max-w-4xl mx-auto">
+      {{ with .Site.Data.experience }}
+      {{ range $index, $entry := . }}
+      <div class="relative flex mb-8">
+        {{ if lt $index (sub (len .) 1) }}
+        <div class="absolute left-4 top-8 w-0.5 h-full bg-blue-200"></div>
+        {{ end }}
+        <div class="z-10 flex-shrink-0 w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center">
+          <div class="w-3 h-3 rounded-full bg-white"></div>
+        </div>
+        <div class="ml-6">
+          <h3 class="text-xl font-bold text-gray-900">{{ $entry.company }}</h3>
+          <p class="font-semibold text-blue-600">{{ $entry.role }} <span class="text-gray-500">| {{ $entry.period
+              }}</span></p>
+          <ul class="list-disc pl-5 text-gray-700 mt-2">
+            {{ range $entry.items }}<li>{{ . }}</li>{{ end }}
+          </ul>
         </div>
       </div>
       {{ end }}
-    </div>
-  </div>
-</section>
-
-<!-- <section id="services" class="container mx-auto px-4 py-16">
-  <h2 class="text-3xl font-bold text-center mb-12">Services</h2>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> -->
-
-
-<!-- Clients -->
-<!-- <section id="services" class="container mx-auto px-4 py-16">
-  <div class="container mx-auto px-4 text-center">
-    <h2 class="text-3xl font-bold mb-4">Clients</h2>
-
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-  {{ range .Site.Data.clients }}
-  <div class="flex items-start space-x-4">
-    <img src="/assets/icons/{{ .icon }}" alt="{{ .title }} icon" class="w-6 h-6 text-blue-600">
-    <div>
-      <h3 class="text-lg font-semibold mb-2">{{ .title }}</h3>
-      <p class="text-gray-600">{{ .desc }}</p>
-    </div>
-  </div>
-  {{ end }}
-</div>
-</div>
-</section> -->
-
-<!-- Experience -->
-
-<section id="experience" class="container mx-auto px-4 py-16">
-  <h2 class="text-3xl font-bold text-center mb-12">Experience</h2>
-  <div class="max-w-4xl mx-auto">
-    {{ with .Site.Data.experience }}
-    {{ range $index, $entry := . }}
-    <div class="relative flex mb-8">
-      {{ if lt $index (sub (len .) 1) }}
-      <div class="absolute left-4 top-8 w-0.5 h-full bg-blue-200"></div>
       {{ end }}
-      <div class="z-10 flex-shrink-0 w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center">
-        <div class="w-3 h-3 rounded-full bg-white"></div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section id="contact" class="container mx-auto px-4 py-8 md:py-16 text-center">
+    <h2 class="text-3xl font-bold mb-6">Ready to Tell Your Story?</h2>
+    <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">Let's create content that bridges technical expertise with
+      human connection—in any language your audience speaks.</p>
+    <div class="flex flex-col md:flex-row justify-center gap-4">
+      <a href="https://calendly.com/marief" target="_blank" rel="noopener"
+        class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition text-lg inline-block">
+        Schedule a Free Consultation
+      </a>
+      <a href="mailto:mf212mf@gmail.com"
+        class="border border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition text-lg">Email
+        Me</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8 md:py-12">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">
+        <h3 class="text-xl font-bold">JustWords NYC</h3>
+        <p class="text-gray-400">Marie-France Han</p>
+        <p class="text-gray-400">New York, NY</p>
       </div>
-      <div class="ml-6">
-        <h3 class="text-xl font-bold text-gray-900">{{ $entry.company }}</h3>
-        <p class="font-semibold text-blue-600">{{ $entry.role }} <span class="text-gray-500">| {{ $entry.period
-            }}</span></p>
-        <ul class="list-disc pl-5 text-gray-700 mt-2">
-          {{ range $entry.items }}<li>{{ . }}</li>{{ end }}
-        </ul>
+      <div class="grid grid-cols-2 gap-4 text-center md:text-left">
+        <a href="mailto:mf212mf@gmail.com" class="hover:text-blue-400">mf212mf@gmail.com</a>
+        <a href="https://linkedin.com/in/mariefr" class="hover:text-blue-400">LinkedIn</a>
+        <a href="https://github.com/mfhan" class="hover:text-blue-400">GitHub</a>
       </div>
     </div>
-    {{ end }}
-    {{ end }}
-  </div>
-</section>
+  </footer>
 
-
-<!-- Call to Action -->
-<section id="contact" class="container mx-auto px-4 py-16 text-center">
-  <h2 class="text-3xl font-bold mb-6">Ready to Tell Your Story?</h2>
-  <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">Let's create content that bridges technical expertise with
-    human connection—in any language your audience speaks.</p>
-  <div class="flex flex-col md:flex-row justify-center gap-4">
-    <!-- <a href="#" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition text-lg">Schedule a
-        Consultation</a> -->
-    <a href="https://calendly.com/marief" target="_blank" rel="noopener"
-      class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition text-lg inline-block">
-      Schedule a Free Consultation
-    </a>
-    <a href="mailto:mf212mf@gmail.com"
-      class="border border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition text-lg">Email
-      Me</a>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-gray-900 text-white py-12">
-  <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-    <div class="mb-4 md:mb-0">
-      <h3 class="text-xl font-bold">JustWords NYC</h3>
-      <p class="text-gray-400">Marie-France Han</p>
-      <p class="text-gray-400">New York, NY</p>
-    </div>
-    <div class="grid grid-cols-2 gap-4 text-center md:text-left">
-      <a href="mailto:mf212mf@gmail.com" class="hover:text-blue-400">mf212mf@gmail.com</a>
-      <!-- <a href="tel:6463203548" class="hover:text-blue-400">646-320-3548</a> -->
-      <a href="https://linkedin.com/in/mariefr" class="hover:text-blue-400">LinkedIn</a>
-      <a href="https://github.com/mfhan" class="hover:text-blue-400">GitHub</a>
-      <!-- <a href="https://mariefrancehan.com" class="hover:text-blue-400">Portfolio</a>
-        <a href="https://mfhan.github.io" class="hover:text-blue-400">GitHub Pages</a> -->
-    </div>
-  </div>
-</footer>
+  <!-- JavaScript for mobile menu toggle -->
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
 </div>
 {{ end }}
