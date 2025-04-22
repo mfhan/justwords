@@ -26,15 +26,16 @@
     - "Managed Jet.com blog and Twitter content"
 
 - company: "Bloomberg"
-  role: "Emerging Markets Editor"
+  role: "Emerging Markets Editor, New York"
   period: "2011 – 2015"
   items:
-    - "Covered corporate and market news from Russia and China with an emphasis on geopolitical risk"
-    - "Generated coverage plans from Bloomberg Terminal data"
-# - company: "Thomson Reuters"
-#   role: "Chief Equities Correspondent"
-#   period: "2006 – 2009"
-#   items:
-#     - "Led 6-person bilingual news desk"
-#     - "Covered Samsung, Hyundai, Posco, and Korean IPOs"
-#     - "Interviewed executives at CES and major global industry events"
+    - "Covered Russian and Chinese markets with an emphasis on geopolitical risk"
+    - "Generated data-driven, market-moving exclusives"
+
+- company: "Thomson Reuters"
+  role: "Chief Equities Correspondent, Seoul"
+  period: "2006 – 2009"
+  items:
+    - "Led bilingual English-Korean news desk"
+    - "Broke news on Samsung, LG, Hyundai, Posco, and Korean IPOs"
+    - "Interviewed executives at major global industry events"
